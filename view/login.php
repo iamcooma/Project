@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+    
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -87,7 +88,7 @@
             $_SESSION['id'] = $data['user_id'];
             $_SESSION['status'] = $data['status'];
             // Redirect user to index.php
-            header("Location: donatetion.php");
+            header("Location: user-index.php");
         } else {
             echo "<div class='form'>
             <center>
