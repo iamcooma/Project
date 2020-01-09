@@ -14,7 +14,7 @@ include('../database/condb.php');
 		$result = mysqli_query($conn,$sql);
 if($result){
 	echo '<script> alert("Data Update")</script>';
-	header("location: ../view/profile.php");
+	header("location: ../view/user-edit.php");
 }else{
 	echo '<script> alert("Error")</script>';
 }

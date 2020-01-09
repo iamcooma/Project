@@ -8,13 +8,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>KruKidDee</title>
+    <title>krukiddee</title>
     <link rel="icon" href="img/Fevicon.png" type="image/png">
     <?php include('../shared/style.php'); ?>
 </head>
 
 <body>
-<?php include('../shared/header-guest.php'); ?>
+<?php include('../shared/header-user.php'); ?>
 <div class="container my-5">
     <?php
     $sql = "SELECT * FROM `project` WHERE user_id IS NOT NULL ORDER BY project_id DESC ";
