@@ -11,7 +11,7 @@ include('../database/condb.php');
     $result = mysqli_query($conn, $sql);
 
     if ($result) {
-        header("location: ../view/comment.php");
+        header("location: ../view/user-comment.php");
     } else {
         echo "  alert('Error back to register again');";
     }

@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <?php include('checklogin.php');
 include('../database/condb.php');
-include('../components/menu.php'); ?>
+?>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <title>มูลนิธิเพื่อการศึกษาและพัฒนามหาวิทยาลัยมหาสารคาม</title>
+    <link rel="icon" href="img/Fevicon.png" type="image/png">
+    <?php include('../shared/style.php'); ?>
 </head>
+
 <?php
 function DateThai($strDate)
 {
@@ -26,7 +27,8 @@ function DateThai($strDate)
 ?>
 
 <body>
-    <div class="row">
+<?php include('../shared/header-user.php'); ?>
+   <div class="row">
         <div class="col-md-3"></div>
         <div class="col-md-6">
             <div>
@@ -58,9 +60,9 @@ function DateThai($strDate)
             </div>
         </div>
     </div>
-    <footer>
-        <?php include('../components/footer.php'); ?>
-    </footer>
+    <br><br>
+  <?php include('../shared/footer.php'); ?>
+    <?php include('../shared/script.php'); ?>
 </body>
 
 </html>

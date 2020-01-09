@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <?php include('checklogin.php');
 include('../database/condb.php');
-include('../components/menu.php');
+// include('../components/menu.php');
 ?>
 
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/style/global.css">
-    <title>content</title>
+    <meta charset="utf-8">
+    <title>มูลนิธิเพื่อการศึกษาและพัฒนามหาวิทยาลัยมหาสารคาม</title>
+    <link rel="icon" href="img/Fevicon.png" type="image/png">
+    <?php include('../shared/style.php'); ?>
 </head>
 
 <?php
@@ -31,6 +29,7 @@ function DateThai($strDate)
 ?>
 
 <body>
+<?php include('../shared/header-user.php'); ?>
     <form action="../model/comment.php" method="POST">
         <style>
             textarea {
@@ -63,7 +62,7 @@ function DateThai($strDate)
         </div>
     </form>
     <br><br>
-    <center>
+    <!-- <center>
         <h4>ประวัติการส่งความคิดเห็น</h4>
     </center>
     <table class="container">
@@ -103,14 +102,13 @@ function DateThai($strDate)
             <?php
         }
             ?>
-    </table>
+    </table> -->
     <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
     <script src="bootstrap/js/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <br><br><br>
-    <footer>
-        <?php include('../components/footer.php'); ?>
-    </footer>
+    <?php include('../shared/footer.php'); ?>
+    <?php include('../shared/script.php'); ?>
 </body>
 
 </html>
