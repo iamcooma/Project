@@ -1,5 +1,5 @@
 <?php 
-    header("Content-disposition: attachment; filename=Krukiddee.docx");
+    header("Content-disposition: attachment; filename=KKD.docx");
     header("Content-type: application/vnd.openxmlformats-officedocument.wordprocessingml.document");
-    readfile("Krukiddee.docx");
+    readfile("KKD.docx");
 ?>
