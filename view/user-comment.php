@@ -29,7 +29,8 @@ function DateThai($strDate)
 ?>
 
 <body>
-<?php include('../shared/header-user.php'); ?>
+    <?php include('../shared/header-user.php'); ?>
+    <hr>
     <form action="../model/comment.php" method="POST">
         <style>
             textarea {
@@ -56,12 +57,11 @@ function DateThai($strDate)
             <h3>ข้อความ</h3>
             <textarea name="com_text" rows="6" cols="25"></textarea>
             <br><br>
-            <button class="btn btn-success" type="submit" >บันทึก</button>
+            <button class="btn btn-success" type="submit">บันทึก</button>
             <input class="btn btn-danger" type=button onclick=window.history.back() value="ย้อนกลับ">
             <!-- <input type="reset" value="รีเฟรช"> -->
         </div>
     </form>
-    <br><br>
     <!-- <center>
         <h4>ประวัติการส่งความคิดเห็น</h4>
     </center>
@@ -106,7 +106,7 @@ function DateThai($strDate)
     <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
     <script src="bootstrap/js/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    <br><br><br>
+    <hr>
     <?php include('../shared/footer.php'); ?>
     <?php include('../shared/script.php'); ?>
 </body>

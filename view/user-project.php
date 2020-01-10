@@ -2,7 +2,7 @@
 <html lang="en">
 
 <?php include('../database/condb.php');
- ?>
+?>
 
 <head>
     <meta charset="UTF-8">
@@ -14,56 +14,58 @@
 </head>
 
 <body>
-<?php include('../shared/header-user.php'); ?>
-<div class="container my-5">
-    <?php
-    $sql = "SELECT * FROM `project` WHERE user_id IS NOT NULL ORDER BY project_id DESC ";
-    $result = mysqli_query($conn, $sql);
-    $result2 = mysqli_query($conn, $sql);
+    <?php include('../shared/header-user.php'); ?>
+    <hr>
+    <div class="container my-5">
+        <?php
+        $sql = "SELECT * FROM `project` WHERE user_id IS NOT NULL ORDER BY project_id DESC ";
+        $result = mysqli_query($conn, $sql);
+        $result2 = mysqli_query($conn, $sql);
 
-    ?>
+        ?>
 
-    <!-- <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <!-- <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
     </div> -->
-    <center>
-        <h5 class="display-4">ความเคลื่อนไหว</h5>
-    </center>
-
-    <div class="field field--name-field-hero-title field--type-string field--label-hidden field--item">
         <center>
-            <h2>บริจาคตอนนี้เพื่อช่วยให้เด็ก ๆ อยู่รอดและมีชีวิตที่ดีขึ้น</h2>
+            <h5 class="display-4">โครงการทั้งหมด</h5>
         </center>
 
-        <p class="lead">คุณสามารถสร้างการเปลี่ยนแปลงระบบสุขภาพของประเทศไทยด้วย“พลังแห่งการให้” ร่วมบริจาคสมทบทุน มูลนิธิรามาธิบดีฯ “เพื่อสุขภาพที่ดีของคนไทย” อย่างยั่งยืน.</p>
-    </div>
+        <div class="field field--name-field-hero-title field--type-string field--label-hidden field--item">
+            <center>
+                <p>บริจาคตอนนี้เพื่อช่วยให้เด็ก ๆ อยู่รอดและมีชีวิตที่ดีขึ้น</p>
+            </center>
 
-    <!-- <div class="bg"><img src="/project/img/3.jpg" alt="bg" width="100%" height="600px">
+            <p style="text-indent: 2.5em;">คุณสามารถสร้างการเปลี่ยนแปลงระบบสุขภาพของประเทศไทยด้วย“พลังแห่งการให้”ร่วมบริจาคสมทบทุนมูลนิธิเพื่อการคึกษามหาวิทยาลัยมหาสารคาม“เพื่อสุขภาพที่ดีของคนไทย”อย่างยั่งยืน.</p>
+        </div>
+        <hr>
+
+        <!-- <div class="bg"><img src="/project/img/3.jpg" alt="bg" width="100%" height="600px">
         </div> -->
 
-    <!-- Page Heading -->
-    <div class="row">
-        <?php
-        $sql = "SELECT * FROM `project` ";
-        $result = mysqli_query($conn, $sql);
-        while ($data = mysqli_fetch_array($result)) {
+        <!-- Page Heading -->
+        <div class="row">
+            <?php
+            $sql = "SELECT * FROM `project` ";
+            $result = mysqli_query($conn, $sql);
+            while ($data = mysqli_fetch_array($result)) {
 
-        ?>
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="/project/img/<?php echo $data['project_pic']; ?>" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title"><?php echo $data['project_title']; ?></h5>
-                        <p class="card-text"><?php echo $data['project_detail']; ?></p>
-                        <a href="form.php?p=<?= base64_encode($data['project_id']) ?>" class="btn btn-primary">ร่วมบริจาค</a>
+            ?>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="/project/img/<?php echo $data['project_pic']; ?>" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo $data['project_title']; ?></h5>
+                            <p class="card-text"><?php echo $data['project_detail']; ?></p>
+                            <a href="form.php?p=<?= base64_encode($data['project_id']) ?>" class="btn btn-primary">ร่วมบริจาค</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        <?php
-        }
-        ?>
-    </div>
-    <!-- ตาราง 4 ช่องที่ยังไม่ใส่ข้อความ-->
-    <!-- <div class="row">
+            <?php
+            }
+            ?>
+        </div>
+        <!-- ตาราง 4 ช่องที่ยังไม่ใส่ข้อความ-->
+        <!-- <div class="row">
         <div class="col-lg-3 col-sm-6 mb-5">
             <div class="card h-100">
                 <a href="#"><img class="card-img-top" src="https://www.unicef.org/thailand/sites/unicef.org.thailand/files/styles/hero_desktop/public/UN0161358.JPG?itok=p9RerXwj" alt=""></a>
@@ -118,8 +120,9 @@
                 </div>
             </div>
         </div> -->
-        </div>
-        <?php include('../shared/footer.php'); ?>
+    </div>
+    <hr>
+    <?php include('../shared/footer.php'); ?>
     <?php include('../shared/script.php'); ?>
 </body>
 

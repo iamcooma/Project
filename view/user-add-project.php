@@ -13,16 +13,17 @@
 
 <body>
     <?php include('../shared/header-user.php'); ?>
-    <div>
+    <hr>
+    <div class="container">
 
         <center>
-            <br><br>
             <h1>ขั้นตอนการส่งโครงการ</h1>
-            <br><br>
-            <div>
+        </center>
+        <div class="container">
+            <center>
                 <FROT color=blue>
                     <p>
-                        1. <a href="../view/register.php">สมัครสมาชิก</a> และ/หรือ <a href="../view/login">เข้าสู่ระบบ</a>
+                        1. <a href="../view/register.php">สมัครสมาชิก</a> และ/หรือ <a href="../view/login.php">เข้าสู่ระบบ</a>
                     </p>
                 </FROT>
                 <p> 2. กรอกข้อมูลโครงการลงในไฟล์ (กรุณาเข้าสู่ระบบก่อนดาวน์โหลดไฟล์)
@@ -31,8 +32,9 @@
                 <p> 3. ส่งไฟล์มาให้เราทางอีเมล submit@krukiddee.com</p>
                 <p> 4. เจ้าหน้าที่ตรวจสอบข้อมูล และอาจขอข้อมูลเพิ่มเติม (ใช้เวลาประมาณ 3-7 วัน)</p>
                 <p> 5. เมื่อเจ้าหน้าที่ยืนยันข้อมูลแล้ว โครงการจะพร้อมรับบริจาคทันที</p>
-            </div>
-        </center>
+            </center>
+        </div>
+
         <div>
             <ul class="navbar-nav mr-auto">
                 <p align="left">
@@ -47,6 +49,7 @@
             </ul>
         </div>
     </div>
+    <hr>
     <?php include('../shared/footer.php'); ?>
     <?php include('../shared/script.php'); ?>
 </body>

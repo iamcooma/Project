@@ -15,11 +15,11 @@ include('../database/condb.php');
 
 <body>
     <?php include('../shared/header-guest.php'); ?>
-
+    <hr>
     <div class="container-fluid">
-     <?php include('../components/carousel.php'); ?>
+        <?php include('../components/carousel.php'); ?>
     </div>
-    
+
     <?php
     $sql = "SELECT * FROM `project` WHERE user_id IS NOT NULL ORDER BY project_id DESC ";
     $result = mysqli_query($conn, $sql);
@@ -76,6 +76,7 @@ include('../database/condb.php');
             </p>
         </div>
     </section>
+    <hr>
     <?php include('../shared/footer.php'); ?>
     <?php include('../shared/script.php'); ?>
 </body>

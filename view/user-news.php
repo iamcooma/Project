@@ -14,10 +14,11 @@ include('../database/condb.php');
 </head>
 
 <body>
-<?php include('../shared/header-user.php'); ?>
-<div class="container my-5">
+    <?php include('../shared/header-user.php'); ?>
+   <hr>
+    <div class="container my-5">
         <center>
-            <h2>เรื่องราว</h2>
+            <h1>ความเคลื่อนไหว</h1>
         </center>
         <!-- Page Heading -->
         <div class="row">
@@ -67,7 +68,7 @@ include('../database/condb.php');
             </div>
         </div>
     </div>
-
+    <hr>
     <?php include('../shared/footer.php'); ?>
     <?php include('../shared/script.php'); ?>
 </body>

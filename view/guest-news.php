@@ -15,9 +15,10 @@ include('../database/condb.php');
 
 <body>
 <?php include('../shared/header-guest.php'); ?>
+<hr>
 <div class="container my-5">
         <center>
-            <h2>เรื่องราว</h2>
+            <h1>ความเคลื่อนไหว</h1>
         </center>
         <!-- Page Heading -->
         <div class="row">
@@ -33,7 +34,7 @@ include('../database/condb.php');
                 </div>
             </div>
             <div class="col-3">
-                <div class="card">
+                <div class="card-shadow">
                     <a href="#"><img class="card-img-top" src="https://www.unicef.org/thailand/sites/unicef.org.thailand/files/styles/hero_desktop/public/UN0161358.JPG?itok=p9RerXwj" alt=""></a>
                     <div class="card-body">
                         <h4 class="card-title">
@@ -67,7 +68,7 @@ include('../database/condb.php');
             </div>
         </div>
     </div>
-
+<hr>
     <?php include('../shared/footer.php'); ?>
     <?php include('../shared/script.php'); ?>
 </body>

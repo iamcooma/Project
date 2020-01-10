@@ -15,6 +15,7 @@
 
 <body>
 <?php include('../shared/header-guest.php'); ?>
+<hr>
 <div class="container my-5">
     <?php
     $sql = "SELECT * FROM `project` WHERE user_id IS NOT NULL ORDER BY project_id DESC ";
@@ -26,12 +27,12 @@
     <!-- <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
     </div> -->
     <center>
-        <h5 class="display-4">ความเคลื่อนไหว</h5>
+        <h5 class="display-4">โครงการทั้งหมด</h5>
     </center>
 
     <div class="field field--name-field-hero-title field--type-string field--label-hidden field--item">
         <center>
-            <h2>บริจาคตอนนี้เพื่อช่วยให้เด็ก ๆ อยู่รอดและมีชีวิตที่ดีขึ้น</h2>
+            <h2>บริจาคตอนนี้เพื่อช่วยให้เด็กๆ อยู่รอดและมีชีวิตที่ดีขึ้น</h2>
         </center>
 
         <p class="lead">คุณสามารถสร้างการเปลี่ยนแปลงระบบสุขภาพของประเทศไทยด้วย“พลังแห่งการให้” ร่วมบริจาคสมทบทุน มูลนิธิรามาธิบดีฯ “เพื่อสุขภาพที่ดีของคนไทย” อย่างยั่งยืน.</p>
@@ -119,6 +120,7 @@
             </div>
         </div> -->
         </div>
+       <hr>
         <?php include('../shared/footer.php'); ?>
     <?php include('../shared/script.php'); ?>
 </body>

@@ -23,7 +23,7 @@
                   <li class="nav-item"><a class="nav-link" href="blog-details.html">Blog Details</a></li>
                 </ul>
               </li> -->
-              <li class="nav-item"><a class="nav-link" href="guest-contact.php">ติดต่อเรา</a></li>
+              <!-- <li class="nav-item"><a class="nav-link" href="guest-contact.php">ติดต่อเรา</a></li> -->
             </ul>
             <ul class="nav navbar-nav navbar-right navbar-social">
               <li><a href="login.php"><i class="ti-user" data-toggle="tooltip" data-placement="bottom" title="ล็อคอิน"></i></a></li>

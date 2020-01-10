@@ -37,11 +37,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3  col-md-6 col-sm-6">
+                <!-- <div class="col-lg-3  col-md-6 col-sm-6">
                     <div class="single-footer-widget mail-chimp">
                         <h6 class="mb-20">Instragram Feed</h6>
                         <ul class="instafeed d-flex flex-wrap">
-                            <li><img src="img/instagram/i1.jpg" alt=""></li>
+                            <li><img src="img/instagram/i1.jpg" alt="">....</li>
                             <li><img src="img/instagram/i2.jpg" alt=""></li>
                             <li><img src="img/instagram/i3.jpg" alt=""></li>
                             <li><img src="img/instagram/i4.jpg" alt=""></li>
@@ -51,16 +51,16 @@
                             <li><img src="img/instagram/i8.jpg" alt=""></li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
                 <div class="col-lg-2 col-md-6 col-sm-6">
                     <div class="single-footer-widget">
                         <h6>ติดตามการเคลื่อนไหว</h6>
                         <p></p>
                         <div class="footer-social d-flex align-items-center">
-                            <a href="#">
+                            <a href="https://www.facebook.com/Krukiddee-104154931116666/">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a href="#">
+                            <!-- <a href="#">
                                 <i class="fab fa-twitter"></i>
                             </a>
                             <a href="#">
@@ -68,7 +68,7 @@
                             </a>
                             <a href="#">
                                 <i class="fab fa-behance"></i>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                 </div>
