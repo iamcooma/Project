@@ -14,7 +14,7 @@
                     <div class="single-footer-widget">
                         <h6>สอบถามและติดต่อเพิ่มเติม<h6>
                         <p>Email :Krukiddee@gamil.com<p>
-                        <p>Phone :xxx-xxx-xxx<p>
+                        <p>Phone :xxx-xxx-xxx   <p>
                         <div class="" id="mc_embed_signup">
 
                             <!-- <form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline"> -->
