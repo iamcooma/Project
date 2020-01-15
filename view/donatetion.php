@@ -81,7 +81,7 @@ function DateThai($strDate)
             <tr>
                 <td>
                     <a href="/project/img/<?php echo $data['project_pic']; ?>" target="_blank">
-                        <img src="/project/img/<?php echo $data['project_pic']; ?>" alt="project_pic" width="60">
+                        <img src="../img/<?php echo $data['project_pic']; ?>" alt="project_pic" width="60">
                     </a>
                 </td>
                 <td><a href="viewdonatetion.php?id=<?php echo $data['project_id']; ?>"><?php echo $data['project_title']; ?></a></td>

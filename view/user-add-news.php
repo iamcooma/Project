@@ -27,22 +27,22 @@ function DateThai($strDate)
 ?>
 
 <body>
-<?php include('../shared/header-user.php'); ?>
-   <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
+    <?php include('../shared/header-user.php'); ?>
+    <div class="container">
+        <div class="col-ml-5">
             <div>
                 <form method="POST" action="../model/topicnews.php" enctype="multipart/form-data">
-                    <div class="container ml-3">
+                    <div class="container">
 
                         <h4>หัวข้อข่าว</h4>
                         <input class="form-control" type="text" name="news_topic" placeholder="หัวข้อโครงการ" required></<input>
 
                         <h4>รายละเอียด</h4>
                         <textarea class="form-control" rows="5" cols="25" type="text" name="news_detail" placeholder="รายละเอียด"></textarea>
-
-                        <h4>วันที่</h4>
-                        <input class="form-control" type="date" name="news_date" placeholder="วันที่" required>
+                        <div class="col-md-4">
+                            <h4>วันที่</h4>
+                            <input class="form-control" type="date" name="news_date" placeholder="วันที่" required>
+                        </div>
 
                         <label for="lname">
                             <h4>รูปภาพ</h4>
@@ -53,15 +53,12 @@ function DateThai($strDate)
                             <input class="btn btn-success" type="submit" value="บันทึก"></input>
                             <input class="btn btn-danger" type=button onclick=window.history.back() value="ย้อนกลับ">
                         </center>
-
                     </div>
                 </form>
-
             </div>
         </div>
     </div>
-    <br><br>
-  <?php include('../shared/footer.php'); ?>
+    <?php include('../shared/footer.php'); ?>
     <?php include('../shared/script.php'); ?>
 </body>
 
