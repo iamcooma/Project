@@ -1,6 +1,8 @@
 <?php
 include('../database/condb.php');
 
+
+
 // $news_topic = $_POST['news_topic'];
 // $news_detail = $_POST['news_detail'];
 // $news_date = $_POST['news_date'];
@@ -18,7 +20,7 @@ include('../database/condb.php');
 if (move_uploaded_file($_FILES["news_img"]["tmp_name"], "../img/" . $_FILES["news_img"]["name"])) {
     $sql = "INSERT INTO news (news_topic, news_detail, news_date, news_img)
 
-    VALUES ('" . $_POST["news_topic"] . "', '" . $_POST["news_detail"] . "', '" . $_POST["news_date"] . "', '" . $_FILES["news_img"]["tmp_name"] . "')";
+    VALUES ('" . $_POST["news_topic"] . "', '" . $_POST["news_detail"] . "', '" . $_POST["news_date"] . "', '" . $_FILES["news_img"]["name"] . "')";
     $query = mysqli_query($conn, $sql);
 }
 
@@ -30,6 +32,6 @@ if (move_uploaded_file($_FILES["news_img"]["tmp_name"], "../img/" . $_FILES["new
 
 if ($query) {
 
-    header("location:../view/login.php");
+    header("location:../view/user-news.php");
 }
 mysqli_close($conn);

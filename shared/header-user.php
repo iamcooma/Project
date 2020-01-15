@@ -17,7 +17,8 @@
                           <li class="nav-item"><a class="nav-link" href="../view/user-project.php">โครงการทั้งหมด</a></li>
                           <li class="nav-item submenu dropdown">
                               <!-- <a href="../view/guest-news.php" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ข่าวสาร</a> -->
-                              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ข่าวสาร</a>
+                              
+                              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">ข่าวสาร</a>
                               <ul class="dropdown-menu">
                                   <li class="nav-item"><a class="nav-link" href="user-news.php">ดูข่าวสารโครงการ</a></li>
                                   <li class="nav-item"><a class="nav-link" href="user-add-news.php">เพิ่มข่าวสารโครงการ</a></li>

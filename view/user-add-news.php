@@ -47,7 +47,7 @@ function DateThai($strDate)
                         <label for="lname">
                             <h4>รูปภาพ</h4>
                         </label>
-                        <input type="file" name="news_img" placeholder="รูปภาพโครงการ">
+                        <input type="file" name="news_img" placeholder="รูปภาพโครงการ" required>
                         <br>
                         <center>
                             <input class="btn btn-success" type="submit" value="บันทึก"></input>

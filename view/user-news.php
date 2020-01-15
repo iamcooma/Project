@@ -15,13 +15,13 @@ include('../database/condb.php');
 
 <body>
     <?php include('../shared/header-user.php'); ?>
-   <hr>
+    <hr>
     <div class="container my-5">
         <center>
             <h1>ความเคลื่อนไหว</h1>
         </center>
         <!-- Page Heading -->
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-3">
                 <div class="card shadow">
                     <a href="#"><img class="card-img-top" src="https://www.unicef.org/thailand/sites/unicef.org.thailand/files/styles/hero_desktop/public/UN0161358.JPG?itok=p9RerXwj" alt=""></a>
@@ -66,6 +66,27 @@ include('../database/condb.php');
                     </div>
                 </div>
             </div>
+        </div> -->
+        <div class="row">
+            <?php
+            $sql = "SELECT * FROM `news` ";
+            $result = mysqli_query($conn, $sql);
+            while ($data = mysqli_fetch_array($result)) {
+
+            ?>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="/project/img/<?php echo $data['news_img']; ?>" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo $data['news_topic']; ?></h5>
+                            <p class="card-text"><?php echo $data['news_detail']; ?></p>
+                            <a href="user-watch-news.php?p=<?= base64_encode($data['news_id']) ?>" class="btn btn-primary">เพิ่มเติม..</a>
+                        </div>
+                    </div>
+                </div>
+            <?php
+            }
+            ?>
         </div>
     </div>
     <hr>
