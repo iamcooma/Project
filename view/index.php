@@ -16,7 +16,7 @@ include('../database/condb.php');
 <body>
     <?php include('../shared/header-guest.php'); ?>
     <hr>
-    <div class="container-fluid">
+    <!-- <div class="container-fluid">
         <?php include('../components/carousel.php'); ?>
     </div>
 
@@ -63,7 +63,7 @@ include('../database/condb.php');
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
-        </div>
+        </div> -->
     </header>
 
     <!-- Page Content -->

@@ -38,7 +38,7 @@
             $_SESSION['id'] = $data['user_id'];
             $_SESSION['status'] = $data['status'];
             // Redirect user to index.php
-            header("Location: donatetion.php");
+            header("Location: admin-index.php");
         } else {
             echo "<div class='form'>
             <center>
