@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
-<?php include('../shared/style.php'); ?>
+<?php include('../shared/style2.php'); ?>
 <!--===============================================================================================-->
 </head>
 <body>
