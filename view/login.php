@@ -75,9 +75,9 @@
         $email = mysqli_real_escape_string($conn, $email);
         $password = stripslashes($_REQUEST['password']);
         $password = mysqli_real_escape_string($conn, $password);
-
+        $password = md5($password);
         // check is user existing in the database or not
-        $sql = "SELECT * FROM users WHERE email = '$email' AND password ='" .md5($password) . "'";
+        $sql = "SELECT * FROM users WHERE email = '$email' AND password ='$password' AND status = 1 ";
 
         $result = mysqli_query($conn, $sql) or die(mysql_error());
         $rows = mysqli_num_rows($result);
@@ -90,7 +90,9 @@
             // Redirect user to index.php
             header("Location: user-index.php");
         } else {
-            echo "<div class='form'>
+            echo "
+            <br>
+            <div class='form'>
             <center>
                 <h3>กรุณาใส่รหัสผ่านของผู้ใช้งาน.</h3><br>
                 <p>คลิกที่นี้เพื่อ<a href=' login.php '>เข้าสู่ระบบ</a></p>
@@ -98,7 +100,7 @@
             </center>";
         }
 
-    
+     
         
     } else {
 
