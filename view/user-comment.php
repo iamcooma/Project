@@ -13,20 +13,20 @@ include('../database/condb.php');
     <?php include('../shared/style.php'); ?>
 </head>
 
-<?php
-function DateThai($strDate)
-{
-    $strYear = date("Y", strtotime($strDate)) + 543;
-    $strMonth = date("n", strtotime($strDate));
-    $strDay = date("j", strtotime($strDate));
-    $strHour = date("H", strtotime($strDate));
-    $strMinute = date("i", strtotime($strDate));
-    $strSeconds = date("s", strtotime($strDate));
-    $strMonthCut = array("", "ม.ค.", "ก.พ.", "มี.ค.", "เม.ย.", "พ.ค.", "มิ.ย.", "ก.ค.", "ส.ค.", "ก.ย.", "ต.ค.", "พ.ย.", "ธ.ค.");
-    $strMonthThai = $strMonthCut[$strMonth];
-    return "$strDay $strMonthThai $strYear";
-}
-?>
+<!-- <?php
+        function DateThai($strDate)
+        {
+            $strYear = date("Y", strtotime($strDate)) + 543;
+            $strMonth = date("n", strtotime($strDate));
+            $strDay = date("j", strtotime($strDate));
+            $strHour = date("H", strtotime($strDate));
+            $strMinute = date("i", strtotime($strDate));
+            $strSeconds = date("s", strtotime($strDate));
+            $strMonthCut = array("", "ม.ค.", "ก.พ.", "มี.ค.", "เม.ย.", "พ.ค.", "มิ.ย.", "ก.ค.", "ส.ค.", "ก.ย.", "ต.ค.", "พ.ย.", "ธ.ค.");
+            $strMonthThai = $strMonthCut[$strMonth];
+            return "$strDay $strMonthThai $strYear";
+        }
+        ?> -->
 
 <body>
     <?php include('../shared/header-user.php'); ?>
@@ -103,9 +103,6 @@ function DateThai($strDate)
         }
             ?>
     </table> -->
-    <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
-    <script src="bootstrap/js/popper.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
     <hr>
     <?php include('../shared/footer.php'); ?>
     <?php include('../shared/script.php'); ?>
