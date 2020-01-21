@@ -24,6 +24,7 @@ $sql = "INSERT INTO `project`(`user_id`,`project_title`, `project_detail`, `proj
                     VALUES ('$user_id','$project_title', '$project_detail', '$project_pic', '$project_date', '$project_manager', '$project_money', '$account_number','$account_name','$account_bank')";
 
 $result = mysqli_query($conn,$sql);
+
 if($result){
     header("location:../view/donatetion.php");
     }

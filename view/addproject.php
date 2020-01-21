@@ -143,7 +143,6 @@ include('../components/menu.php'); ?>
         </div>
 
     </div>
-    <br><br><br>
     <footer>
         <?php include('../components/footer.php'); ?>
     </footer>

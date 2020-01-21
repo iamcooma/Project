@@ -13,60 +13,24 @@ include('../database/condb.php');
     <?php include('../shared/style.php'); ?>
 </head>
 
+<style>
+    .carousel-caption {
+        background-color: rgba(0, 0, 0, 0.5);
+        border: 1px solid #333;
+        bottom: 50px !important;
+    }
+
+    .carousel-item {
+        min-height: 500px !important;
+    }
+</style>
+
 <body>
     <?php include('../shared/header-guest.php'); ?>
     <hr>
-    <!-- <div class="container-fluid">
+    <div class="container-fluid">
         <?php include('../components/carousel.php'); ?>
     </div>
-
-    <?php
-    $sql = "SELECT * FROM `project` WHERE user_id IS NOT NULL ORDER BY project_id DESC ";
-    $result = mysqli_query($conn, $sql);
-    $result2 = mysqli_query($conn, $sql);
-
-    ?>
-
-    <header>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <?php $i = 0;
-                while ($data = mysqli_fetch_array($result)) { ?>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="<?= $i ?>" <?php if ($i == 0) {
-                                                                                                echo 'class="active"';
-                                                                                            } ?>></li>
-                <?php $i++;
-                } ?>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-
-                <?php $i = 0;
-                while ($data = mysqli_fetch_array($result2)) { ?>
-                    <div class="carousel-item <?php if ($i == 0) {
-                                                    echo 'active';
-                                                } ?>" style="background-image: url('../img/<?= $data['project_pic'] ?>')">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3 class="display-4"><?= $data['project_title'] ?></h3>
-                            <p class="lead"><?= $data['project_detail'] ?></p>
-                            <a href="form.php?p=<?= base64_encode($data['project_id']) ?>" class="btn btn-warning btn-lg">ร่วมบริจาคโครงการ</a>
-                        </div>
-                    </div>
-                <?php $i++;
-                } ?>
-
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div> -->
-    </header>
-
-    <!-- Page Content -->
     <section class="py-5">
         <div class="container">
             <div>
@@ -78,22 +42,22 @@ include('../database/condb.php');
                 <br>
 
                 <div class="owl-carousel owl-theme blog-slider">
-                <?php
+                    <?php
                     $sql = "SELECT * FROM `project` ";
                     $result = mysqli_query($conn, $sql);
                     while ($data = mysqli_fetch_array($result)) {
 
-                ?>
-                    <div class="card blog__slide text-center">
-                        <div class="blog__slide__img">
-                            <img class="card-img rounded-0" src="/project/img/<?php echo $data['project_pic']; ?>" alt="...">
+                    ?>
+                        <div class="card blog__slide text-center">
+                            <div class="blog__slide__img">
+                                <img class="card-img rounded-0" src="/project/img/<?php echo $data['project_pic']; ?>" alt="...">
+                            </div>
+                            <div class="blog__slide__content">
+                                <a class="blog__slide__label" href="">Fashion</a>
+                                <h3><a href="#">New york fashion week's continued the evolution</a></h3>
+                                <p>2 days ago</p>
+                            </div>
                         </div>
-                        <div class="blog__slide__content">
-                            <a class="blog__slide__label" href="">Fashion</a>
-                            <h3><a href="#">New york fashion week's continued the evolution</a></h3>
-                            <p>2 days ago</p>
-                        </div>
-                    </div>
                     <?php } ?>
 
                 </div>
