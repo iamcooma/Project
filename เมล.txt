@@ -3,3 +3,7 @@ pass : kkd012345
 
 IG : k.krukiddee
 pass : kkd012345
+
+Line Id : k.krukiddee
+email : krukiddee@gmail.com
+pass : kkd012345
